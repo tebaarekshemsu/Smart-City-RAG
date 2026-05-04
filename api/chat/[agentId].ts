@@ -1,4 +1,5 @@
 import { Readable } from "node:stream";
+import type { ReadableStream as NodeReadableStream } from "node:stream/web";
 import { handleChatStream } from "@mastra/ai-sdk";
 import { mastra } from "../../src/mastra/index.js";
 
@@ -43,7 +44,7 @@ export default async function handler(req: any, res: any) {
     res.setHeader("Connection", "keep-alive");
     res.setHeader("X-Accel-Buffering", "no");
 
-    const nodeStream = Readable.fromWeb(stream as unknown as ReadableStream);
+    const nodeStream = Readable.fromWeb(stream as unknown as NodeReadableStream);
     nodeStream.pipe(res);
   } catch (error) {
     res.statusCode = 500;

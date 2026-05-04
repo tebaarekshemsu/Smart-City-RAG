@@ -23,8 +23,8 @@ export const mastra = new Mastra({
   vectors: {
     citizenServicesVector: new MongoDBVector({
       id: 'mongodb-citizen-services',
-      uri: process.env.MONGODB_URI,
-      dbName: process.env.MONGODB_DATABASE,
+      uri: process.env.MONGODB_URI ?? '',
+      dbName: process.env.MONGODB_DATABASE ?? '',
     }),
   },
   storage: new MastraCompositeStore({
