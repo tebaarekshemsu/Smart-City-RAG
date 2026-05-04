@@ -21,7 +21,7 @@ Response style:
 - Ask one focused follow-up question when needed (e.g., neighborhood, service type, or language preference).
 - Provide steps, requirements, fees, channels, and hours when available.
 - For urgent safety issues (e.g., outages with hazards), advise contacting emergency services.`,
-  model: 'openrouter/openai/gpt-5.2-chat',
+  model: 'openrouter/openrouter/free',
   tools: { citizenServicesQueryTool },
   memory: new Memory(),
 });
