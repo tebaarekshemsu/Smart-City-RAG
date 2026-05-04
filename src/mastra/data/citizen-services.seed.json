@@ -1,0 +1,268 @@
+[
+  {
+    "serviceId": "digital_id",
+    "language": "en",
+    "title": "City Digital ID Registration",
+    "category": "Identity",
+    "summary": "Register for a city digital ID to access online services such as permits, payments, and service requests.",
+    "eligibility": "Residents aged 16+ with a valid national ID or passport.",
+    "steps": [
+      "Create an account on the Smart City portal.",
+      "Verify your phone number and email.",
+      "Upload your national ID or passport photo.",
+      "Complete a selfie verification.",
+      "Receive approval notification within 24-48 hours."
+    ],
+    "requiredDocs": [
+      "National ID or passport",
+      "Proof of address (utility bill or lease)"
+    ],
+    "fees": "Free",
+    "channels": {
+      "online": "https://city.example.gov/digital-id",
+      "inPerson": "Citizen Service Center, Desk 4"
+    },
+    "hours": "Mon-Fri 08:30-17:00",
+    "contact": "+251-11-000-1000",
+    "notes": "Use the same phone number for future service requests.",
+    "updatedAt": "2026-05-01"
+  },
+  {
+    "serviceId": "digital_id",
+    "language": "am",
+    "title": "የከተማ ዲጂታል መታወቂያ ምዝገባ",
+    "category": "መታወቂያ",
+    "summary": "የፈቃድ ጥያቄ፣ ክፍያዎችን እና የአገልግሎት ጥያቄዎችን ለመጠቀም የከተማ ዲጂታል መታወቂያ ይመዝገቡ።",
+    "eligibility": "16+ ዕድሜ ያላቸው ነዋሪዎች በብሔራዊ መታወቂያ ወይም ፓስፖርት።",
+    "steps": [
+      "በስማርት ሲቲ ፖርታል መለያ ይፍጠሩ።",
+      "ስልክ ቁጥርና ኢሜይል ያረጋግጡ።",
+      "ብሔራዊ መታወቂያ ወይም ፓስፖርት ፎቶ ይጫኑ።",
+      "ሴልፊ ማረጋገጫ ያጠናቁ።",
+      "24-48 ሰዓት ውስጥ ማረጋገጫ ማሳወቂያ ይቀበላሉ።"
+    ],
+    "requiredDocs": [
+      "ብሔራዊ መታወቂያ ወይም ፓስፖርት",
+      "የአድራሻ ማረጋገጫ (የኤሌክትሪክ ወይም ውሃ ደብዳቤ)"
+    ],
+    "fees": "ነፃ",
+    "channels": {
+      "online": "https://city.example.gov/digital-id",
+      "inPerson": "የነዋሪ አገልግሎት ማዕከል፣ ዴስክ 4"
+    },
+    "hours": "ሰኞ-አርብ 08:30-17:00",
+    "contact": "+251-11-000-1000",
+    "notes": "ተመሳሳይ ስልክ ቁጥር ለቀጣይ አገልግሎቶች ይጠቀሙ።",
+    "updatedAt": "2026-05-01"
+  },
+  {
+    "serviceId": "building_permit",
+    "language": "en",
+    "title": "Residential Building Permit",
+    "category": "Permits",
+    "summary": "Apply for a residential building permit before starting construction or major renovations.",
+    "eligibility": "Property owners or authorized contractors with land title.",
+    "steps": [
+      "Submit architectural drawings and site plan.",
+      "Pay the application review fee.",
+      "Schedule a zoning compliance review.",
+      "Receive permit decision within 10 business days.",
+      "Book inspections at foundation, framing, and final stages."
+    ],
+    "requiredDocs": [
+      "Land title or lease certificate",
+      "Architectural drawings (PDF)",
+      "Structural safety report"
+    ],
+    "fees": "ETB 1,500 review fee + inspection fees",
+    "channels": {
+      "online": "https://city.example.gov/building-permits",
+      "inPerson": "Urban Planning Office, Floor 2"
+    },
+    "hours": "Mon-Fri 08:30-16:30",
+    "contact": "+251-11-000-2000",
+    "notes": "Do not start construction before permit approval.",
+    "updatedAt": "2026-04-20"
+  },
+  {
+    "serviceId": "building_permit",
+    "language": "am",
+    "title": "የመኖሪያ ህንፃ ፈቃድ",
+    "category": "ፈቃዶች",
+    "summary": "ህንፃ ለመገንባት ወይም ትልቅ ማሻሻያ ለማድረግ በፊት የመኖሪያ ፈቃድ ይጠይቁ።",
+    "eligibility": "የቤት ባለቤት ወይም ተፈቃድ የተሰጠው ኮንትራክተር።",
+    "steps": [
+      "የአርኪቴክቸር ስዕሎችን እና የመሬት ካርታ ያቅርቡ።",
+      "የግምገማ ክፍያ ይክፈሉ።",
+      "የዞኒንግ ግምገማ ቀጠሮ ያስይዙ።",
+      "10 የስራ ቀናት ውስጥ ውሳኔ ይቀበላሉ።",
+      "ለመሠረት፣ ለመደረጃ እና ለመጨረሻ ምርመራ ቀጠሮ ያድርጉ።"
+    ],
+    "requiredDocs": [
+      "የመሬት ባለቤትነት ማረጋገጫ",
+      "የአርኪቴክቸር ስዕሎች (PDF)",
+      "የደህንነት ሪፖርት"
+    ],
+    "fees": "ETB 1,500 የግምገማ ክፍያ + የምርመራ ክፍያ",
+    "channels": {
+      "online": "https://city.example.gov/building-permits",
+      "inPerson": "የከተማ ፕላን ቢሮ፣ 2ኛ ወለል"
+    },
+    "hours": "ሰኞ-አርብ 08:30-16:30",
+    "contact": "+251-11-000-2000",
+    "notes": "ፈቃድ ሳይቀርብ ግንባታ አትጀምሩ።",
+    "updatedAt": "2026-04-20"
+  },
+  {
+    "serviceId": "waste_collection",
+    "language": "en",
+    "title": "Household Waste Collection Schedule",
+    "category": "Sanitation",
+    "summary": "Find weekly waste collection days and request missed pickup service.",
+    "eligibility": "All households within city limits.",
+    "steps": [
+      "Check your neighborhood pickup day online.",
+      "Place bins outside before 7:00 AM.",
+      "If missed, submit a service request within 48 hours."
+    ],
+    "requiredDocs": [
+      "No documents required"
+    ],
+    "fees": "Included in municipal service fee",
+    "channels": {
+      "online": "https://city.example.gov/waste",
+      "inPerson": "Sanitation Office, Ground Floor"
+    },
+    "hours": "Mon-Sat 07:00-18:00",
+    "contact": "+251-11-000-3000",
+    "notes": "Recycling pickup is every second Saturday.",
+    "updatedAt": "2026-05-02"
+  },
+  {
+    "serviceId": "waste_collection",
+    "language": "am",
+    "title": "የቤት ቆሻሻ መሰብሰብ የሳምንት ጊዜ",
+    "category": "ንጽህና",
+    "summary": "የሳምንት የቆሻሻ መሰብሰብ ቀን ያግኙ እና ያመለጠ መውሰድ ጥያቄ ያቅርቡ።",
+    "eligibility": "በከተማ ውስጥ ያሉ ቤተሰቦች ሁሉ።",
+    "steps": [
+      "የአካባቢዎን የመውሰድ ቀን በመስመር ላይ ይመልከቱ።",
+      "ታንኳዎችን ከ7:00 ጠዋት በፊት ውጭ ያውጡ።",
+      "ካልተሰበሰበ በ48 ሰዓት ውስጥ ጥያቄ ያቅርቡ።"
+    ],
+    "requiredDocs": [
+      "ማስረጃ አያስፈልግም"
+    ],
+    "fees": "በከተማ አገልግሎት ክፍያ ውስጥ ተካትቷል",
+    "channels": {
+      "online": "https://city.example.gov/waste",
+      "inPerson": "የንጽህና ቢሮ፣ መሬት ወለል"
+    },
+    "hours": "ሰኞ-ቅዳሜ 07:00-18:00",
+    "contact": "+251-11-000-3000",
+    "notes": "የመደበኛ መውሰድ ሳምንታዊ የሁለተኛ ቅዳሜ ነው።",
+    "updatedAt": "2026-05-02"
+  },
+  {
+    "serviceId": "public_transport",
+    "language": "en",
+    "title": "Public Transport Card and Routes",
+    "category": "Transport",
+    "summary": "Get a transit card, check routes, and report a lost card.",
+    "eligibility": "Residents and visitors with valid identification.",
+    "steps": [
+      "Buy or reload a transit card at kiosks or online.",
+      "Check route schedules on the city transit app.",
+      "Report lost cards within 24 hours to block balance."
+    ],
+    "requiredDocs": [
+      "Valid ID for card registration"
+    ],
+    "fees": "ETB 50 card fee + pay-as-you-go fares",
+    "channels": {
+      "online": "https://city.example.gov/transit",
+      "inPerson": "Central Station Service Desk"
+    },
+    "hours": "Daily 06:00-22:00",
+    "contact": "+251-11-000-4000",
+    "notes": "Student and senior discounts require verification.",
+    "updatedAt": "2026-03-28"
+  },
+  {
+    "serviceId": "public_transport",
+    "language": "am",
+    "title": "የህዝብ ትራንስፖርት ካርድ እና መስመሮች",
+    "category": "ትራንስፖርት",
+    "summary": "የትራንስፖርት ካርድ ይያዙ፣ መስመሮችን ይመልከቱ እና የጠፋ ካርድ ያሳውቁ።",
+    "eligibility": "ተለዋዋጭ መታወቂያ ያላቸው ነዋሪዎች እና ጎብኚዎች።",
+    "steps": [
+      "ካርድ በኪዮስክ ወይም በመስመር ላይ ይግዙ ወይም ይሙሉ።",
+      "መስመሮችን በከተማ ትራንስፖርት መተግበሪያ ይመልከቱ።",
+      "ካርድ ካጠፋችሁ በ24 ሰዓት ውስጥ ይጠብቁ።"
+    ],
+    "requiredDocs": [
+      "ለካርድ ምዝገባ ትክክለኛ መታወቂያ"
+    ],
+    "fees": "ETB 50 የካርድ ክፍያ + ትራንስፖርት ክፍያ",
+    "channels": {
+      "online": "https://city.example.gov/transit",
+      "inPerson": "ማዕከላዊ ጣቢያ አገልግሎት ዴስክ"
+    },
+    "hours": "በየቀኑ 06:00-22:00",
+    "contact": "+251-11-000-4000",
+    "notes": "የተማሪና እርጅና ቅናሾች ማረጋገጫ ይፈልጋሉ።",
+    "updatedAt": "2026-03-28"
+  },
+  {
+    "serviceId": "utility_billing",
+    "language": "en",
+    "title": "Water and Electricity Billing Help",
+    "category": "Utilities",
+    "summary": "Pay utility bills, set reminders, and report outages.",
+    "eligibility": "Account holders with a utility customer number.",
+    "steps": [
+      "Log in to the utility portal.",
+      "Enter your customer number and confirm balance.",
+      "Pay with mobile money or bank card.",
+      "Report outages using the quick form."
+    ],
+    "requiredDocs": [
+      "Utility customer number"
+    ],
+    "fees": "No additional service fee for online payments",
+    "channels": {
+      "online": "https://city.example.gov/utilities",
+      "inPerson": "Utilities Service Desk"
+    },
+    "hours": "Mon-Sun 06:00-23:00",
+    "contact": "+251-11-000-5000",
+    "notes": "Outage reports are prioritized by safety risk.",
+    "updatedAt": "2026-04-15"
+  },
+  {
+    "serviceId": "utility_billing",
+    "language": "am",
+    "title": "የውሃ እና ኤሌክትሪክ ክፍያ እገዛ",
+    "category": "አገልግሎቶች",
+    "summary": "የመጠጥ ውሃ እና ኤሌክትሪክ ክፍያ ይፈጽሙ፣ ማስታወሻ ያቀናብሩ እና ብልሽት ያሳውቁ።",
+    "eligibility": "የውሃ/ኤሌክትሪክ ደንበኛ ቁጥር ያላቸው።",
+    "steps": [
+      "ወደ የአገልግሎት ፖርታል ይግቡ።",
+      "የደንበኛ ቁጥር ያስገቡ እና የቀሪ ክፍያ ያረጋግጡ።",
+      "በሞባይል ገንዘብ ወይም ባንክ ካርድ ይክፈሉ።",
+      "ብልሽት ካለ በፈጣን ፎርም ያሳውቁ።"
+    ],
+    "requiredDocs": [
+      "የደንበኛ ቁጥር"
+    ],
+    "fees": "ለመስመር ላይ ክፍያ ተጨማሪ ክፍያ የለም",
+    "channels": {
+      "online": "https://city.example.gov/utilities",
+      "inPerson": "የአገልግሎት ዴስክ"
+    },
+    "hours": "ሰኞ-እሁድ 06:00-23:00",
+    "contact": "+251-11-000-5000",
+    "notes": "የብልሽት ጥያቄዎች በደህንነት አስቸኳይነት ይተያያዣሉ።",
+    "updatedAt": "2026-04-15"
+  }
+]

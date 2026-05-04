@@ -2,17 +2,31 @@
 import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
-import { DuckDBStore } from "@mastra/duckdb";
+import { DuckDBStore } from '@mastra/duckdb';
+import { MongoDBVector } from '@mastra/mongodb';
+import { chatRoute } from '@mastra/ai-sdk';
 import { MastraCompositeStore } from '@mastra/core/storage';
 import { Observability, DefaultExporter, CloudExporter, SensitiveDataFilter } from '@mastra/observability';
-import { weatherWorkflow } from './workflows/weather-workflow';
-import { weatherAgent } from './agents/weather-agent';
-import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } from './scorers/weather-scorer';
+import { citizenIngestWorkflow } from './workflows/citizen-ingest-workflow';
+import { citizenAssistantAgent } from './agents/citizen-assistant-agent';
 
 export const mastra = new Mastra({
-  workflows: { weatherWorkflow },
-  agents: { weatherAgent },
-  scorers: { toolCallAppropriatenessScorer, completenessScorer, translationScorer },
+  workflows: { citizenIngestWorkflow },
+  agents: { citizenAssistantAgent },
+  server: {
+    apiRoutes: [
+      chatRoute({
+        path: '/chat/:agentId',
+      }),
+    ],
+  },
+  vectors: {
+    citizenServicesVector: new MongoDBVector({
+      id: 'mongodb-citizen-services',
+      uri: process.env.MONGODB_URI,
+      dbName: process.env.MONGODB_DATABASE,
+    }),
+  },
   storage: new MastraCompositeStore({
     id: 'composite-storage',
     default: new LibSQLStore({
