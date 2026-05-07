@@ -1,6 +1,6 @@
 # Smart City Citizen Assistant
 
-This project is a Retrieval-Augmented Generation (RAG) assistant that helps citizens access smart city digital services through natural language chat. It supports English and Amharic, retrieves facts from a curated knowledge base, and returns grounded answers with sources.
+This project is a Retrieval-Augmented Generation (RAG) assistant that helps citizens access smart city digital services through natural language chat. It supports English and Amharic, retrieves facts from a curated knowledge base, and returns grounded answers with cited sources.
 
 ## What it does
 
