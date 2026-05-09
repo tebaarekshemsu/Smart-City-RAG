@@ -7,7 +7,7 @@ const promptButtons = document.querySelectorAll(".prompt");
 const sessionId = crypto.randomUUID();
 const messages = [];
 const agentId = "citizen-assistant-agent";
-const chatEndpoints = [`/api/chat/${agentId}`, `/chat/${agentId}`];
+const chatEndpoints = [`http://localhost:4111/chat/${agentId}`, `/api/chat/${agentId}`, `/chat/${agentId}`];
 
 const appendMessage = (role, text) => {
   const message = document.createElement("div");

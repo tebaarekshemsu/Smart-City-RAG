@@ -4,6 +4,9 @@ import { ModelRouterEmbeddingModel } from '@mastra/core/llm';
 import { embedMany } from 'ai';
 import { z } from 'zod';
 import { readFile } from 'node:fs/promises';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { existsSync } from 'node:fs';
 
 const EMBEDDING_MODEL = 'openai/text-embedding-3-small';
 const EMBEDDING_DIMENSION = 1536;
@@ -31,9 +34,22 @@ type SeedEntry = {
   updatedAt: string;
 };
 
+const findProjectRoot = (startDir: string): string => {
+  let dir = startDir;
+  for (let i = 0; i < 10; i++) {
+    if (existsSync(join(dir, 'src', 'mastra'))) return dir;
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  throw new Error('Could not find project root (no src/mastra directory found)');
+};
+
 const loadSeedData = async (): Promise<SeedEntry[]> => {
-  const seedUrl = new URL('../data/citizen-services.seed.json', import.meta.url);
-  const raw = await readFile(seedUrl, 'utf-8');
+  const currentFile = fileURLToPath(import.meta.url);
+  const projectRoot = findProjectRoot(dirname(currentFile));
+  const seedPath = join(projectRoot, 'src', 'mastra', 'data', 'citizen-services.seed.json');
+  const raw = await readFile(seedPath, 'utf-8');
   return JSON.parse(raw) as SeedEntry[];
 };
 

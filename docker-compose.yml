@@ -1,0 +1,20 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-atlas-local:8.0
+    container_name: smart-city-mongodb
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGODB_INITDB_DATABASE=smart_city
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+volumes:
+  mongodb_data:
+    driver: local
