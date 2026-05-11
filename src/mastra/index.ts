@@ -56,3 +56,6 @@ export const mastra = new Mastra({
     },
   }),
 });
+
+// Note: `mastra` is the application entrypoint used by Mastra Studio.
+// Small, non-functional comment added for clarity during contribution.
